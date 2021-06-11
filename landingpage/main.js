@@ -15,3 +15,22 @@ renderer.setSize(window.innerWidth,window.innerHeight)
 camera.position.setZ(30);
 
 renderer.render(scene,camera);
+
+const geometry = new THREE.IcosahedronGeometry(1,0)
+const material = new THREE.MeshBasicMaterial( {color: 0xFFFFFF, wireframe: true});
+const icosahedron = new THREE.Mesh (geometry,material);
+
+scene.add(icosahedron);
+
+
+
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  icosahedron.rotation.y += 0.01;
+
+  renderer.render(scene,camera);
+}
+
+animate();
