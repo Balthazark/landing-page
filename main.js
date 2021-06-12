@@ -2,7 +2,7 @@ import './style.css'
 
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { LoadingManager } from 'three';
+import { CameraHelper, LoadingManager } from 'three';
 
 
 
@@ -18,6 +18,7 @@ const loadingManager = new THREE.LoadingManager( () =>
 
 
 const scene = new THREE.Scene();
+scene.background = new THREE.Color( 0x212121);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 
@@ -29,7 +30,8 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth,window.innerHeight)
-camera.position.setZ(10);
+camera.position.setZ(2);
+
 
 renderer.render(scene,camera);
 
@@ -40,6 +42,7 @@ const material = new THREE.MeshBasicMaterial( {color: 0xFFFFFF, wireframe: true}
 const icosahedron = new THREE.Mesh (geometry,material);
 
 scene.add(icosahedron);
+icosahedron.position.set(0,0,0)
 
 //Set up lightning
 
@@ -50,7 +53,7 @@ scene.add(ambientLight);
 
 //Helper for visualizing grid
 const gridHelper = new THREE.GridHelper();
-scene.add(gridHelper);
+//scene.add(gridHelper);
 
 
 //Enables interaction
@@ -70,8 +73,10 @@ const backgroundTexture = new THREE.TextureLoader().load('stars.jpg');
 
 function moveCamera() {
   const position = document.body.getBoundingClientRect().top;
-  icosahedron.rotation.y += 0.075;
-
+  icosahedron.rotation.y += 0.02;
+  //camera.position.z = postion * -0.01;
+  camera.position.x = position * -0.0002;
+  camera.position.y = position * -0.0002;
 }
 
 document.body.onscroll = moveCamera;
