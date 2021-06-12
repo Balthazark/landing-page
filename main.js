@@ -2,10 +2,26 @@ import './style.css'
 
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import { LoadingManager } from 'three';
+
+
+
+
+//Loading screen
+const loadingManager = new THREE.LoadingManager( () =>
+{
+  const loadingScreen = document.getElementById('loading-screen');
+  loadingScreen.classList.add('fade-out');
+
+  loadingScreen.addEventListener('transitionend', onTranstitionEnd);
+});
+
 
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+
+
 
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg')
@@ -31,13 +47,35 @@ const ambientLight = new THREE.AmbientLight(0xFFFFFF);
 scene.add(ambientLight);
 
 
+
+//Helper for visualizing grid
 const gridHelper = new THREE.GridHelper();
 scene.add(gridHelper);
 
+
+//Enables interaction
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false;
+
+//Background
+
+const backgroundTexture = new THREE.TextureLoader().load('stars.jpg');
+//scene.background = backgroundTexture;
+
+
 
 
 //Functions 
+
+
+function moveCamera() {
+  const position = document.body.getBoundingClientRect().top;
+  icosahedron.rotation.y += 0.075;
+
+}
+
+document.body.onscroll = moveCamera;
+moveCamera();
 
 
 //Funcation to populate the scene with stars, MeshStandardMaterials reacts to light
@@ -55,12 +93,13 @@ function addStar() {
   
 }
 
+//Populating the scene with stars
 Array(300).fill().forEach(addStar);
 
 
 //Our animation loop
 function animate() {
-  
+
   requestAnimationFrame(animate);
 
   icosahedron.rotation.y += 0.01;
