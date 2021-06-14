@@ -103,7 +103,7 @@ function animate() {
 
   requestAnimationFrame(animate);
 
-  icosahedron.rotation.y += 0.01;
+  icosahedron.rotation.y += 0.006;
 
   controls.update();
 
