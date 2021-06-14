@@ -13,7 +13,6 @@ canvas {
   font-style: normal;
 }
 
-
 main {
   width: 100vw;
   color: white;
@@ -22,55 +21,136 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
-  
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1, h2, h3 {
-  
+h1,
+h2 {
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   overflow-wrap: break-word;
   font-family: elevon, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
+h3 {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1.my-name {
+  background: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2.about-me {
+  background: linear-gradient(-225deg, #20e2d7 0%, #f9fea5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2.my-projects {
+  background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2.work-history {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2.reach-me {
+  background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 header {
-    background: linear-gradient(45deg,#4e54c8f1, #9198e5f3);
-    border-radius: 3%;
-    grid-column: 2 / span 5;
-    font-size: 2rem;
-    padding: 2rem;
-    margin-bottom: var(--spacing);
-  }
+  background: #282828fb;
+  border-radius: 3%;
+  grid-column: 2 / span 5;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
 
 section {
-    border-radius: 3%;
-    grid-column: 2 / 8;
-    padding: 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-  }
-
-.section-background1{
-  background: linear-gradient(45deg,#11998ef1, #38ef7ef6);
-
+  border-radius: 3%;
+  grid-column: 2 / 8;
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
 }
 
-.section-background2{
-  background: linear-gradient(45deg,#ff9966f3, #ff5e61f6);
+.section-background1 {
+  background: #282828fb;
 }
 
-.section-background3{
-background: linear-gradient(45deg,#ffe359fa, #ffa851fb);
+.section-background2 {
+  background: #282828fb;
 }
 
-.section-background4{
-background: linear-gradient(45deg,#ad5389fa,#3b1053fa);
+.section-background3 {
+  background: #282828fb;
 }
-  
+
+.section-background4 {
+  background: #282828fb;
+}
+
 .left {
-    grid-column: 6 / 12;
-  }
+  grid-column: 6 / 12;
+}

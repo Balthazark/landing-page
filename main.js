@@ -18,9 +18,10 @@ const loadingManager = new THREE.LoadingManager( () =>
 
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color( 0x212121);
+scene.background = new THREE.Color( 0x191919);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+
 
 
 
@@ -30,7 +31,8 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth,window.innerHeight)
-camera.position.setZ(2);
+camera.position.setZ(1);
+
 
 
 renderer.render(scene,camera);
@@ -42,8 +44,6 @@ const material = new THREE.MeshBasicMaterial( {color: 0xFFFFFF, wireframe: true}
 const icosahedron = new THREE.Mesh (geometry,material);
 
 scene.add(icosahedron);
-icosahedron.position.set(0,0,0)
-
 //Set up lightning
 
 const ambientLight = new THREE.AmbientLight(0xFFFFFF);
@@ -65,18 +65,14 @@ controls.enableZoom = false;
 const backgroundTexture = new THREE.TextureLoader().load('stars.jpg');
 //scene.background = backgroundTexture;
 
-
-
-
 //Functions 
 
 
 function moveCamera() {
   const position = document.body.getBoundingClientRect().top;
-  icosahedron.rotation.y += 0.02;
-  //camera.position.z = postion * -0.01;
-  camera.position.x = position * -0.0002;
-  camera.position.y = position * -0.0002;
+  icosahedron.rotation.y += 0.01;
+  camera.position.x = position * -0.001;
+  //camera.position.y = position * -0.0002;
 }
 
 document.body.onscroll = moveCamera;
@@ -99,7 +95,7 @@ function addStar() {
 }
 
 //Populating the scene with stars
-Array(300).fill().forEach(addStar);
+Array(500).fill().forEach(addStar);
 
 
 //Our animation loop
