@@ -99,13 +99,8 @@ function animate() {
   renderer.render(scene,camera);
 }
 
-
-function init(){
-  
-
-
-  animate();
-
+window.onresize = function() {
+  document.body.height = window.innerHeight;
 }
-
-window.onload = init;
+window.onresize();
+animate();
