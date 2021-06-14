@@ -1,12 +1,10 @@
 canvas {
-  min-width: 100vh;
-  min-height: 100vh;
-  overflow: hidden;
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
+
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
@@ -26,6 +24,7 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
+  overflow: hidden;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -176,7 +175,6 @@ section {
     padding-left: 3%;
   }
   
-  
-  
-  
 }
+
+/* tryring to get a preloader working*/

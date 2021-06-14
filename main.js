@@ -2,27 +2,15 @@ import './style.css'
 
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { CameraHelper, LoadingManager } from 'three';
-
-
+import { Loader } from 'three';
 
 
 //Loading screen
-const loadingManager = new THREE.LoadingManager( () =>
-{
-  const loadingScreen = document.getElementById('loading-screen');
-  loadingScreen.classList.add('fade-out');
-
-  loadingScreen.addEventListener('transitionend', onTranstitionEnd);
-});
-
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color( 0x191919);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-
-
 
 
 const renderer = new THREE.WebGLRenderer({
@@ -109,4 +97,13 @@ function animate() {
   renderer.render(scene,camera);
 }
 
-animate();
+
+function init(){
+  
+
+
+  animate();
+
+}
+
+window.onload = init;
