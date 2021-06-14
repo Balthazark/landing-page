@@ -1,5 +1,4 @@
 canvas {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +7,7 @@ canvas {
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
   --spacing: 350px;
+  
 
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
@@ -154,4 +154,27 @@ section {
 
 .left {
   grid-column: 6 / 12;
+}
+
+@media only screen and (max-width: 768px) {
+  header{
+    grid-column: 1 / span 11;
+    font-size: 1rem;
+    margin-bottom: 150px;
+    
+  }
+  section{
+    grid-column: 1/ span 11;
+    margin-bottom: 150px;
+   
+  }
+  main{
+    display:grid; 
+    place-items: center;
+   
+  }
+  
+  
+  
+  
 }
