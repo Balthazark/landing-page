@@ -97,10 +97,12 @@ function animate() {
   controls.update();
 
   renderer.render(scene,camera);
+
+  window.onresize = function() {
+    document.body.height = window.innerHeight;
+  }
+  window.onresize();
 }
 
-window.onresize = function() {
-  document.body.height = window.innerHeight;
-}
-window.onresize();
+
 animate();
