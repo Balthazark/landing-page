@@ -169,9 +169,7 @@ section {
    
   }
   main{
-    display:grid; 
-    place-items: center;
-   
+    padding-left: 15px;
   }
   
   
