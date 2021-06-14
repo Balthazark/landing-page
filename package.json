@@ -9,6 +9,7 @@
     "vite": "^2.3.7"
   },
   "dependencies": {
-    "three": "^0.129.0"
+    "three": "^0.129.0",
+    "viewport-size": "^0.0.1"
   }
 }

@@ -67,7 +67,6 @@ const backgroundTexture = new THREE.TextureLoader().load('stars.jpg');
 
 //Functions 
 
-
 function moveCamera() {
   const position = document.body.getBoundingClientRect().top;
   icosahedron.rotation.y += 0.01;
