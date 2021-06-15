@@ -134,7 +134,6 @@ a.projects{
   color:white;
 
 }
-
 a.projects:link{
   background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
   border-radius: 5px;
@@ -147,9 +146,23 @@ a.projects:hover{
   border-style: solid;
   border-color :#FFFFFF;
 }
-  
-  
 
+a.reach-me{
+  color: white
+}
+
+a.reach-me:link{
+  background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+  border-radius: 5px;
+  padding: 3px;
+  text-decoration: none;
+  color:white;
+}
+
+a.reach-me:hover{
+  border-style: solid;
+  border-color :#FFFFFF;
+}
 
   
 
