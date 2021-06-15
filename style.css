@@ -7,7 +7,9 @@ canvas {
   min-height: -webkit-fill-available
 }
 
-
+body,html{
+  height: 100%;
+}
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
@@ -20,6 +22,7 @@ canvas {
 }
 
 main {
+  height: 100%;
   width: 100vw;
   color: white;
   z-index: 99;
