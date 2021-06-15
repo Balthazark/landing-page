@@ -7,6 +7,8 @@ canvas {
 
 }
 
+
+
 body,html{
   min-height: -webkit-fill-available;
   background-color:#191919;
@@ -25,7 +27,6 @@ body,html{
 
 main {
   min-height: -webkit-fill-available;
-  width: 100vw;
   color: white;
   z-index: 99;
   position: absolute;
@@ -128,6 +129,29 @@ h2.reach-me {
   font-weight: 700;
   font-style: normal;
 }
+
+a.projects{
+  color:white;
+
+}
+
+a.projects:link{
+  background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
+  border-radius: 5px;
+  padding: 3px;
+  text-decoration: none;
+  color:white;
+}
+
+a.projects:hover{
+  border-style: solid;
+  border-color :#FFFFFF;
+}
+  
+  
+
+
+  
 
 header {
   background: #282828fb;
