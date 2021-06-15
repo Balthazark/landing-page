@@ -5,15 +5,13 @@ canvas {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
-  width: 100%;
-  min-height: 100vh;
-  color: #191919
+
+  
 }
 
 
 
-html, body {
+body {
   min-height: 100vh;
   color: #191919
   
