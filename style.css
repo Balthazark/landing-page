@@ -9,8 +9,8 @@ canvas {
 
 body,html{
   min-height: -webkit-fill-available;
-  background-color: black;
-  background: black;
+  background-color:#191919;
+  background:#191919;
 }
 
 :root {
