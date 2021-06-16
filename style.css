@@ -153,7 +153,7 @@ a.reach-me:link {
 
 header {
   background: #282828fb;
-  border-radius: 3%;
+  border-radius: 15px 15px 15px 15px;
   grid-column: 2 / span 5;
   font-size: 2rem;
   padding: 2rem;
@@ -161,7 +161,7 @@ header {
 }
 
 section {
-  border-radius: 3%;
+  border-radius: 15px 15px 15px 15px;
   grid-column: 2 / 8;
   padding: 1rem;
   font-size: 1.25rem;
