@@ -2,23 +2,20 @@ canvas {
   display: block;
   position: fixed;
   top: 0;
-  left: 0;  
+  left: 0;
   min-height: -webkit-fill-available;
-
 }
 
-
-
-body,html{
+body,
+html {
   min-height: -webkit-fill-available;
-  background-color:#191919;
-  background:#191919;
+  background-color: #191919;
+  background: #191919;
 }
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
   --spacing: 350px;
-  
 
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
@@ -130,34 +127,29 @@ h2.reach-me {
   font-style: normal;
 }
 
-a.projects{
-  color:white;
-
+a.projects {
+  color: white;
 }
-a.projects:link{
+a.projects:link {
   background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
   border-radius: 20px;
   padding: 6px;
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
-a.projects:hover{
+a.projects:hover {
   border-style: solid;
-  border-color :#FFFFFF;
+  border-color: #ffffff;
 }
 
-a.reach-me{
-  color: white
+a.reach-me {
+  color: white;
 }
 
-a.reach-me:link{
+a.reach-me:link {
   padding-right: 1.5em;
 }
-
-
-
-  
 
 header {
   background: #282828fb;
@@ -199,24 +191,21 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-  header{
+  header {
     grid-column: 1 / span 11;
     font-size: 1rem;
     margin-bottom: 150px;
-    
   }
-  section{
-    grid-column: 1/ span 11;
+  section {
+    grid-column: 1 / span 11;
     margin-bottom: 150px;
-   
   }
-  main{
+  main {
     padding-left: 3%;
   }
-  .section-background4{
-    grid-column: 1/ span 11;
+  .section-background4 {
+    grid-column: 1 / span 11;
   }
-  
 }
 
 /* tryring to get a preloader working*/
