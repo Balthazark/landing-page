@@ -136,8 +136,8 @@ a.projects{
 }
 a.projects:link{
   background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
-  border-radius: 5px;
-  padding: 3px;
+  border-radius: 20px;
+  padding: 6px;
   text-decoration: none;
   color:white;
 }
@@ -152,11 +152,7 @@ a.reach-me{
 }
 
 a.reach-me:link{
-  background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
-  border-radius: 5px;
-  padding: 3px;
-  text-decoration: none;
-  color:white;
+  padding-right: 1.5em;
 }
 
 a.reach-me:hover{
@@ -198,6 +194,7 @@ section {
 
 .section-background4 {
   background: #282828fb;
+  grid-column: 2 / span 3;
 }
 
 .left {
@@ -218,6 +215,9 @@ section {
   }
   main{
     padding-left: 3%;
+  }
+  .section-background4{
+    grid-column: 1/ span 11;
   }
   
 }
