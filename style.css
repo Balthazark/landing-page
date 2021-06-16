@@ -4,6 +4,7 @@ canvas {
   top: 0;
   left: 0;
   min-height: -webkit-fill-available;
+  
 }
 
 body,
@@ -11,6 +12,7 @@ html {
   min-height: -webkit-fill-available;
   background-color: #191919;
   background: #191919;
+  overflow-x: hidden;
 }
 
 :root {
@@ -201,7 +203,7 @@ section {
     margin-bottom: 150px;
   }
   main {
-    padding-left: 3%;
+    padding-left: 1.5%;
   }
   .section-background4 {
     grid-column: 1 / span 11;
