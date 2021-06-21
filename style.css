@@ -130,13 +130,18 @@ h2.reach-me {
 
 }
 
+h3.projects{
+  font-size:large;
+  
+}
+
 a.projects {
   color: white;
 }
 a.projects:link {
   background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
-  border-radius: 20px;
-  padding: 8px;
+  border-radius: 25px;
+  padding: 11px;
   text-decoration: none;
   color: white;
   font-weight:normal
