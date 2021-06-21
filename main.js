@@ -22,6 +22,17 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
+
+//Updates the vieport when a window is resized
+  window.addEventListener('resize', function(){
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  renderer.setSize(width,height);
+  camera.aspect = width/height;
+  camera.updateProjectionMatrix();
+})
+
+
 camera.position.setZ(1);
 
 renderer.render(scene, camera);
